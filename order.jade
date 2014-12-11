@@ -1,0 +1,47 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    include ./includes/nav.jade
+    section.
+      <br>
+      <br>
+      <br>
+      <div id="wufoo-z4vs6ow1jxyq6s">
+      Fill out my <a href="https://transcriba.wufoo.com/forms/z4vs6ow1jxyq6s">online form</a>.
+      </div>
+      <script type="text/javascript">var z4vs6ow1jxyq6s;(function(d, t) {
+      var s = d.createElement(t), options = {
+      'userName':'transcriba',
+      'formHash':'z4vs6ow1jxyq6s',
+      'autoResize':true,
+      'height':'354',
+      'async':true,
+      'host':'wufoo.com',
+      'header':'show',
+      'ssl':true};
+      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function() {
+      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+      try { z4vs6ow1jxyq6s = new WufooForm();z4vs6ow1jxyq6s.initialize(options);z4vs6ow1jxyq6s.display(); } catch (e) {}};
+      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      })(document, 'script');</script>
+
+    section
+      br
+      br
+      br
+      img(src='img/press.png')
+    section
+      br
+      br
+      br
+      br
+      br
+      img(src='img/steps.png')
+    section
+      br
+      br
+      br
+      img(src='img/testimonials.png')
+    include ./includes/foot.jade

@@ -43,6 +43,7 @@ header[role="upper"]
     nav
       @include span-columns(6)
       padding-top: 1px
+      visibility: hidden
 
       ul li
         margin-right: 25px
@@ -106,3 +107,64 @@ section
       margin-top: 30px
 
       
+footer
+  @include fill-parent
+  margin-top: 60px
+  padding-bottom: 80px
+  padding-top: 10px
+  background: #E1E7E9
+
+  .nav-container
+    @include outer-container(960px)
+
+    a
+      color: #6A7475
+      text-decoration: none
+    
+    h1.logo
+      @include span-columns(3)
+      text-transform: uppercase
+      font-size: 1.3rem
+      letter-spacing: 5px
+
+    ul li
+      list-style: none
+      float: left
+
+
+    nav
+      @include span-columns(6)
+      padding-top: 1px
+      visibility: hidden
+
+      ul li
+        margin-right: 25px
+
+        a
+          font-weight: 400
+          font-size: 1.05rem
+
+        a:hover
+          text-decoration: underline
+
+
+    .support
+      @include span-columns(3)
+
+      ul
+        padding-top: 2px
+        
+        li
+          margin-right: 15px
+
+          a
+            opacity: .7
+
+            &.phone
+              font-weight: 700
+              font-size: .8rem
+
+          a i
+            font-size: .85rem
+
+
