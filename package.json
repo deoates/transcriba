@@ -1,0 +1,22 @@
+{
+  "name": "transcriba",
+  "version": "1.0.0",
+  "description": "easily transribe audio files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deoates/transcriba.git"
+  },
+  "author": "David Oates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deoates/transcriba/issues"
+  },
+  "homepage": "https://github.com/deoates/transcriba",
+  "devDependencies": {
+    "jade": "^1.8.1"
+  }
+}
