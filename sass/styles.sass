@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import compass
 @import normalize
 @import bourbon/bourbon
 @import neat/neat
@@ -21,19 +22,48 @@ body
 header[role="upper"]
   @include fill-parent
   background: $dark
+  @include box-shadow(inset 0px -2px 0px rgba(0,0,0,.2))
+  position: fixed
+  top: 0px
 
   .nav-container
     @include outer-container(960px)
+    color: #fff
 
     a
-      color: #fff
       text-decoration: none
-    
-    h1.logo
-      @include span-columns(3)
-      text-transform: uppercase
-      font-size: 1.3rem
-      letter-spacing: 5px
+      color: #fff
+
+    .logo-support-container
+      @include span-columns(6)
+      
+
+      h1
+        text-transform: uppercase
+        font-size: 1.3rem
+        letter-spacing: 5px
+        float: left
+
+      ul
+        padding-top: 2px
+        float: left
+        
+        li
+          margin-right: 15px
+
+          a:hover i
+            opacity: 1
+
+          span.phone
+            opacity: .7
+            font-size: .8rem
+            font-weight: 700
+            display: inline-block
+            padding-left: 7px
+
+          i
+            font-size: .85rem
+            opacity: .75
 
     ul li
       list-style: none
@@ -56,56 +86,41 @@ header[role="upper"]
           text-decoration: underline
 
 
-    .support
-      @include span-columns(3)
-
-      ul
-        padding-top: 2px
-        
-        li
-          margin-right: 15px
-
-          a
-            opacity: .7
-
-            &.phone
-              font-weight: 700
-              font-size: .8rem
-
-          a i
-            font-size: .85rem
     
 section
   @include outer-container(960px)
   color: darken($dark, 5%)
 
+  &.hero
+    margin-top: 60px
+  &.steps
+    margin-top: 120px
+  &.press
+    margin-top: 100px
+  &.testimonials
+    margin-top: 100px
+
   article
-    @include span-columns(6)
+    @include span-columns(12)
     text-align: center
     margin-top: 30px
     
     h1
-      font-size: 2.6rem
+      font-size: 3rem
 
     a.order
+      font-family: 'PT Sans', sans-serif
+      font-style: italic
+      font-weight: 700
+      font-size: 1.2rem
       margin-top: 30px
       display: inline-block
       background: darken(#43B5EA, 8%)
       padding: 10px 20px
-      text-transform: uppercase
-      font-weight: 700
       text-decoration: none
       color: #fff
       border-radius: 4px
     
-  aside
-    @include span-columns(6)
-    margin-top: 35px
-    text-align: center
-    img
-      width: 90%
-      margin-top: 30px
-
       
 footer
   @include fill-parent

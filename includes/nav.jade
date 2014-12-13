@@ -1,6 +1,13 @@
 header(role='upper')
   .nav-container
-    h1.logo: a(href='#') Transcriba
+    .logo-support-container
+      h1.logo: a(href='#') Transcriba
+      ul
+        li: a(href='mailto:support@transcriba.com' alt='Email support'): i.fa.fa-envelope
+        li: a(href='#' onclick='olark("api.box.expand")' alt='Chat with support'): i.fa.fa-comment
+        li
+          i.fa.fa-phone
+          span.phone +1 (800) 645-5978
     nav
       ul
         li: a(href='#') Examples
@@ -8,11 +15,6 @@ header(role='upper')
         li: a(href='#') FAQ
         li: a(href='#') Order
         li: a(href='#') Contact
-    .support
-      ul
-        li: a(href='#'): i.fa.fa-envelope
-        li: a(href='#'): i.fa.fa-comment
-        li: a(href='#'): i.fa.fa-phone
-        li: a.phone(href='#') 1 800 445-352
+
 
 
